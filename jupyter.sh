@@ -65,6 +65,11 @@ while [ "$find" -eq 0 ];do
          break;
         fi
     done < jupyter_out.log
+    
+    
+    
+    
+    #test
 done 
 
  
