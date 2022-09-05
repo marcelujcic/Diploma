@@ -24,13 +24,14 @@ Spodaje je prikazano drevo predvine strukture imenikov.
                                                                             podatki
                                                                             
 
+## Zagon sbatch skript
 Zagon sbatch skripte je v ukazni lupini s pomočjo ukaza npr. 
-  ```sbatch vsebniki/sh_skripte/jupyter.sh | tail -f jupyter_out.log```
+-  ```sbatch vsebniki/sh_skripte/jupyter.sh | tail -f jupyter_out.log```
 oz. bolj splošno
-```sbatch vsebniki/sh_skripte/{ime_skripte}.sh | tail -f {ime_log_datoteke}.log```
+- ```sbatch vsebniki/sh_skripte/{ime_skripte}.sh | tail -f {ime_log_datoteke}.log```
 ta ukaz pošlje posel preko slurm-a, ta pa potem alocira procesorska jedra oz. vozlišče/a. Vzporedno pa na standardni izhod izpisuje vsebino log datoteke, v katero se zapišejo prijavni podatki.
 
-Primer izpisa prijavnih podatkov
+##Primer izpisa prijavnih podatkov
 
 ```
                     Žeton (token):
