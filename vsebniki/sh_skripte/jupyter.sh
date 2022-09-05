@@ -30,7 +30,7 @@ printed=0
 module load OpenMPI/4.1.4-GCC-11.3.0
 
 # Zagon Jupyter zvezka
-mpirun --n $SLURM_NTASKS singularity run --bind sand-box/shared/:/opt/notebooks/ sand-box/jupyter7.sif/ |
+mpirun --n $SLURM_NTASKS singularity run --bind vsebniki/zvezki/:/opt/notebooks/ vsebniki/jupyter7.sif/ |
 while [ "$find" -eq 0 ];do
     while IFS= read -r line;do
         if [[ "$line" == *"token="* ]]; then
