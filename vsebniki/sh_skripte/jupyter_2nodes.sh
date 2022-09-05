@@ -31,7 +31,7 @@ module load OpenMPI/4.1.4-GCC-11.3.0
 
 # Zagon Jupyter zvezka
 
-singularity exec --bind sand-box/shared/:/opt/notebooks/ sand-box/zadnijVsebnik.sif jupyter notebook  --notebook-dir=/opt/notebooks --ip='*' --port=8888 --no-browser --allow-root  |
+singularity exec --bind vsebniki/zvezki/:/opt/notebooks/ vsebniki/zadnijVsebnik.sif jupyter notebook  --notebook-dir=/opt/notebooks --ip='*' --port=8888 --no-browser --allow-root  |
 while [ "$find" -eq 0 ];do
     while IFS= read -r line;do
         if [[ "$line" == *"token="* ]]; then
