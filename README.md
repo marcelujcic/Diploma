@@ -1,5 +1,5 @@
 # Diploma
-Pred prvim zagonom  sbatch skripte je potrebno na sistemi, kjer se poganja narediti ustrezno strukturo imenikov.
+Pred prvim zagonom  sbatch skripte (.sh datoteke)je potrebno na sistemi, kjer se poganja narediti ustrezno strukturo imenikov.
 Predvidena struktura imenika je sledeča
 - vsebniki/zvezki/podatki
 - vsebniki/def_datoteke
