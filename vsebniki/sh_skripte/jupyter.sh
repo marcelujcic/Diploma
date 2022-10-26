@@ -30,7 +30,8 @@ printed=0
 module load OpenMPI/4.1.4-GCC-11.3.0
 
 # Zagon Jupyter zvezka
-mpirun --n $SLURM_NTASKS singularity run --bind sand-box/shared/:/opt/notebooks/ sand-box/jupyter7.sif/ |
+#mpirun --n $SLURM_NTASKS singularity run --bind sand-box/shared/:/opt/notebooks/ sand-box/jupyter7.sif/ |
+singularity exec --bind vsebniki/zvezki/:/opt/notebooks/ vsebniki/zadnijVsebnik.sif jupyter notebook  --notebook-dir=/opt/notebooks --ip='*' --port=8888 --no-browser --allow-root  |
 while [ "$find" -eq 0 ];do
     while IFS= read -r line;do
         if [[ "$line" == *"token="* ]]; then
@@ -60,6 +61,7 @@ while [ "$find" -eq 0 ];do
                     localhost:${port_local}
 
                     V brskalniku se odpre Dask dashboard na naslednjem naslovu;
+                    Vendar v primeru, da se dask klient že izvaja na katerem od Jupyter zvezkov
                     localhost:${port_local1}
                     " | cat - jupyter_out.log > temp && mv temp jupyter_out.log
          break;
