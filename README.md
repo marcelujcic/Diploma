@@ -1,4 +1,4 @@
-# Diploma
+# Diploma, porazdeljeno računanje na superračunalniških gručah z ogrodji Singularity in Dask
 Pred prvim zagonom  sbatch skripte (.sh datoteke)je potrebno na sistemi, kjer se poganja narediti ustrezno strukturo imenikov.
 Predvidena struktura imenika je sledeča
 - vsebniki/zvezki/podatki
